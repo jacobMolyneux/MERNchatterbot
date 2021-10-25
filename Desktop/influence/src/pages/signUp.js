@@ -3,7 +3,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 
-const LogInPage = () => {
+const SignUpPage = () => {
   let [username, setUsername] = useState("");
   let [password, setPassword] = useState("");
   let [tempUsername, setTempUsername] = useState("");
@@ -25,7 +25,7 @@ const LogInPage = () => {
   return (
     <Container>
       <Form className="border p-3 m-3 " style={{ width: "50rem" }}>
-        <h1 className="border-bottom">Log In!</h1>
+        <h1 className="border-bottom">Sign Up!</h1>
         <Form.Group className="m-3">
           <Form.Label>Username</Form.Label>
           <Form.Control
@@ -43,10 +43,11 @@ const LogInPage = () => {
           ></Form.Control>
         </Form.Group>
         <Button onClick={handleSubmission} className="m-3">
-          Log In
+          Sign Up!{" "}
         </Button>
       </Form>
     </Container>
   );
 };
-export { LogInPage };
+
+export { SignUpPage };

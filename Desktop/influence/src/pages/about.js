@@ -1,4 +1,4 @@
 const AboutPage = () => {
-  return <h1>Hello From the About Page</h1>;
+  return <div>Hello from about page</div>;
 };
 export { AboutPage };
