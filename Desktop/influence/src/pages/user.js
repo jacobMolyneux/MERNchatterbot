@@ -13,6 +13,7 @@ const UserPage = () => {
   let [user, setUser] = useState("");
 
   // insert function here to make an api call to backend to get specific user data
+  //
 
   return (
     <Container>
@@ -49,8 +50,20 @@ const UserPage = () => {
         </Col>
       </Row>
       <Row>
-        <p>Some user statistics</p>
-        <p> this will be a table that gets the user statistics</p>
+        <ListGroup horizontal className="mt-3">
+          <ListGroup.Item className="text-center">
+            <h1 className="text-primary">Followers</h1>
+            <p>55,000</p>
+          </ListGroup.Item>
+          <ListGroup.Item className="text-center">
+            <h1 className="text-primary">Engagement</h1>
+            <p>20%</p>
+          </ListGroup.Item>
+          <ListGroup.Item className="text-center">
+            <h1 className="text-primary">Avg Impressions</h1>
+            <p>20,000</p>
+          </ListGroup.Item>
+        </ListGroup>
       </Row>
     </Container>
   );

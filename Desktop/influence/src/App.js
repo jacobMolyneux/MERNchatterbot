@@ -10,9 +10,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export default function App() {
   return (
     <Router>
-      <div>
+      <div className="m-4">
         <div className="d-flex">
-          <h1 className="ml-3">Influence</h1>
+          <h1 className="ml-3 mr-3">Influence</h1>
           <Nav className="d-flex justify-content-center">
             <Nav.Item className="m-3">
               <Link to="/">Home</Link>
