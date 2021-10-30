@@ -5,6 +5,7 @@ import { LogInPage } from "./pages/loginPage";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import { ProfilePage } from "./pages/ProfilePage.js";
+import { SignUpPage } from "./pages/signUpPage.js";
 
 function App() {
   return (
@@ -20,7 +21,10 @@ function App() {
               <Link to="/Influencer">Influencer</Link>
             </Nav.Item>
             <Nav.Item className="m-3">
-              <Link to="/LogIn">Users</Link>
+              <Link to="/LogIn">Log In</Link>
+            </Nav.Item>
+            <Nav.Item className="m-3">
+              <Link to="/SignUp">Sign Up</Link>
             </Nav.Item>
             <Nav.Item className="m-3">
               <Link to="/profile">Profile</Link>
@@ -36,6 +40,9 @@ function App() {
           </Route>
           <Route path="/LogIn">
             <LogInPage />
+          </Route>
+          <Route path="/SignUp">
+            <SignUpPage />
           </Route>
           <Route path="/profile">
             <ProfilePage />
